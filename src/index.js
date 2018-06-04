@@ -4,24 +4,7 @@ import './index.css';
 import App from './App';
 // import registerServiceWorker from './registerServiceWorker';
 
-// function Wellcome(props){
-//     return <h1>Hello {props.name} !!!</h1>;
-// }
 
-// function AppWell(){
-//     return ( 
-//     <div>
-//         <Wellcome name="React"/>
-//         <Wellcome name="Ajaks"/>
-//         <Wellcome name="Bootstrap"/>
-//     </div>
-//     );
-// }
-
-// ReactDOM.render(
-// <AppWell /> , 
-// document.getElementById('root')
-// );
 
 function formatDate(date){
     return date.toLocaleDateString();
