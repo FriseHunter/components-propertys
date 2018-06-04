@@ -10,18 +10,34 @@ function formatDate(date){
     return date.toLocaleDateString();
 }
 
+//User Avatar
+function Avatar(props){
+    return ( 
+        <img className="avatar" 
+        src={props.user.avatarUrl} 
+        alt={props.user.name} 
+        />
+    );
+}
+
+// User info
+function UserInfo(props){
+    return (
+            <div className="user_Card">
+               <Avatar user={props.user}/>
+                <div className="user_name">
+                    {props.user.name}
+                </div>
+            </div>
+    );
+}
+
+//User Comment
+
 function Comment(props){
     return(
         <div className="Comment">
-            <div className="user_Card">
-                <img className="avatar" 
-                src={props.author.avatarUrl} 
-                alt={props.author.name} 
-                />
-                <div className="user_name">
-                    {props.author.name}
-                </div>
-            </div>
+            <UserInfo user={props.author}/>
             <div className="user_comment">
                 {props.text}
             </div>
