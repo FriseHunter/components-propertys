@@ -62,6 +62,9 @@ ReactDOM.render(
     text = {comment.text}
     author = {comment.author}
     />,
-    document.getElementById('root')
+    document.getElementById('root'),
+    
+     
+    
 );  
 // registerServiceWorker();
